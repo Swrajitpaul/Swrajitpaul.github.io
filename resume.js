@@ -1,7 +1,7 @@
 
 setTimeout(
   function(){
-    alert("THE CURRENT RESUME MIGHT NOT BE DISPLAYED \n \nPLEASE CONTACT ME FOR THE UPDATED RESUME\n \nTHANK YOU!");
+    alert("Last updated: Feb 2022 \n \n  The Current resume might not be displayed \n \nPlease contact me for the updated resume\n \nThank you!");
   },
   1000);
 
