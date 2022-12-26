@@ -14,6 +14,7 @@ h1{
 
 h2{
   background-color: white;
+  color: darkred;
   font-style: normal;
   font-size: 5em;
   font: italic bold 50px Georgia, serif;
@@ -24,6 +25,7 @@ h2{
 
 h3{
   background-color: white;
+  color: darkred;
   font-style: normal;
   font-size: 5em;
   font: italic bold 50px Georgia, serif;;
@@ -53,24 +55,26 @@ nav{
 }
 
 .btn {
-    border: none;
+    border: 3px;
     background-color:white;
+    color: black;
     width: 130px;
     height: 50px;
     text-align: center;
     font-size: 16px;
+    font-style: italic;
     cursor: pointer;
     display: inline-block;
 }
 
 .btn:hover{
-  background-color: tomato;
+  background-color: #555555;;
+  color: white;
 }
 
 .homepage{
-  color:black;
-  border-style: solid;
-  border-color: red;
+  background-color: #555555;;
+  color: white;
 }
 
 img.image{
@@ -80,7 +84,6 @@ img.image{
 }
 
 footer{
-    background-color: lightgrey;
     position: fixed;
     left: 0;
     bottom: 0;

@@ -34,24 +34,26 @@ nav{
 }
 
 .btn {
-    border: none;
-    background-color:white;
-    width: 130px;
-    height: 50px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    display: inline-block;
+  border: 3px;
+  background-color:white;
+  color: black;
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  font-style: italic;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .btn:hover{
-  background-color: tomato;
+  background-color: #555555;;
+  color: white;
 }
 
 .myresume{
-  color:black;
-  border-style: solid;
-  border-color: red;
+  background-color: #555555;;
+  color: white;
 }
 
 .download{
@@ -74,61 +76,7 @@ nav{
   background: white;
 }
 
-#c{
-  position: fixed;
-  right:5%;
-  top: 5%;
-  color: #7f1b41;
-  font-size: 50px;
-  transform: rotate(15deg);
-}
-
-#java{
-  position: fixed;
-  left:5%;
-  top: 5%;
-  color: #1c0512;
-  font-size: 50px;
-  transform: rotate(-20deg);
-}
-
-#python{
-  position: fixed;
-  right:1%;
-  top: 70%;
-  color: #21145e;
-  font-size: 50px;
-  transform: rotate(-18deg);
-}
-
-#html{
-  position: fixed;
-  left:6%;
-  top: 40%;
-  color: #05c9a2;
-  font-size: 50px;
-  transform: rotate(20deg);
-}
-
-#javascript{
-  position: fixed;
-  left:1%;
-  top: 70%;
-  color: #eecb84;
-  font-size: 50px;
-  transform: rotate(28deg);
-}
-
-#sql{
-  position: fixed;
-  left:85%;
-  top: 40%;
-  color: #f14d07;
-  font-size: 50px;
-  transform: rotate(-12deg);
-}
 footer{
-    background-color: lightgrey;
     position: fixed;
     left: 0;
     bottom: 0;

@@ -33,16 +33,22 @@ nav{
 }
 
 .btn {
-    border: none;
-    background-color:white;
-    width: 130px;
-    height: 50px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    display: inline-block;
+  border: 3px;
+  background-color:white;
+  color: black;
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  cursor: pointer;
+  display: inline-block;
   }
-.btn:hover {background: tomato;}
+  
+.btn:hover{
+  background-color: #555555;;
+  color: white;
+}
 
 div{
   position: center;
@@ -58,9 +64,8 @@ h2{
 
 
 .aboutme{
-  color:black;
-  border-style: solid;
-  border-color: red;
+  background-color: #555555;;
+  color: white;
 }
 
 img{
@@ -71,8 +76,6 @@ img{
 
 
 footer{
-    background-color: lightgrey;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
