@@ -22,7 +22,7 @@ body {
     height: 1px;
     background: #333;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
-    width: 51%;
+    width: 36%;
   }
   
   .btn {
