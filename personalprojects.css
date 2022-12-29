@@ -40,7 +40,7 @@ body {
   
   .download{
       background-color: lightgray;
-      border:none;
+      border: none;
       color: black;
       padding: 15px 32px;
       text-align: center;
@@ -53,15 +53,12 @@ body {
     color: salmon;
   }
   
-  
   h2{
-    background-color: white;
-    color:salmon;
+    color: salmon;
     font-style: italic;
     font-size: 40px;
     font-family: "Times New Roman", Times, serif;
   }
-  
   
   .btn:hover{
     color: salmon;
@@ -70,10 +67,17 @@ body {
   .myprojects{
     color: salmon;
   }
+
+  span.description {
+    font-style: italic;
+  }
+  
+  span.technology {
+    font-style: italic;
+  }
   
   footer{
       left: 0;
-      position: fixed;
       bottom: 0;
       width: 100%;
       color: salmon;

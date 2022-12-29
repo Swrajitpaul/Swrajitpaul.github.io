@@ -1,16 +1,8 @@
 body {
-  background-repeat: repeat;
-  background-position: top left;
+  background-color: White;
+  overflow-y: scroll;
+  overflow-x: hidden;
   text-align: center;
-}
-h1{
-  background-color: white;
-  font-style: normal;
-  font-size: 5em;
-  font-family: "Times New Roman", Times, serif;
-  position: fixed;
-  left: 39%;
-  bottom: 43.5%;
 }
 
 a:link{
@@ -19,7 +11,7 @@ a:link{
 
 nav{
   overflow: hidden;
-  background-color: white;
+  background-color: inherit;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -40,38 +32,52 @@ nav{
   width: 130px;
   height: 50px;
   text-align: center;
-  font-style: italic;
   font-size: 16px;
+  font-style: italic;
   cursor: pointer;
   display: inline-block;
+}
+
+.download{
+    background-color: lightgray;
+    border:none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.download:hover{
+  color: salmon;
+}
+
+h2{
+  color: salmon;
+  font-style: italic;
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+
 }
 
 .btn:hover{
   color: salmon;
 }
 
-.myresume{
-  color:salmon;
-}
-
-.download{
-  border: none;
-  border-style: groove;
-  padding: 12px 30px;
-  font-size: 20px;
-  cursor: pointer;
-  display: inline-block;
-  position: fixed;
-  left: 45%;
-  bottom:10%;
-}
-
-.download:hover {
+.myprojects{
   color: salmon;
 }
 
+span.technology{
+  font-style: italic;
+}
+
+span.description{
+  font-style: italic;
+}
+
 footer{
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;

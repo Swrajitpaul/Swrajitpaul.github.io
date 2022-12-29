@@ -14,7 +14,7 @@ h1{
 
 h2{
   background-color: white;
-  color: darkred;
+  color: gray;
   font-style: normal;
   font-size: 5em;
   font: italic bold 50px Georgia, serif;
@@ -25,7 +25,7 @@ h2{
 
 h3{
   background-color: white;
-  color: darkred;
+  color: gray;
   font-style: normal;
   font-size: 5em;
   font: italic bold 50px Georgia, serif;;
@@ -68,19 +68,11 @@ nav{
 }
 
 .btn:hover{
-  background-color: #555555;;
-  color: white;
+  color: salmon;
 }
 
 .homepage{
-  background-color: #555555;;
-  color: white;
-}
-
-img.image{
-  position: fixed;
-  top: 30%;
-  left: 26%;
+  color: salmon;
 }
 
 footer{
@@ -88,6 +80,6 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
-    color: black;
+    color: salmon;
     text-align: center;
 }

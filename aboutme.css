@@ -3,6 +3,7 @@ body {
   background-position: top left;
   text-align: center;
 }
+
 h1{
   background-color: white;
   font-style: italic;
@@ -46,8 +47,7 @@ nav{
   }
   
 .btn:hover{
-  background-color: #555555;;
-  color: white;
+  color: salmon;
 }
 
 div{
@@ -56,16 +56,14 @@ div{
 
 h2{
   background-color: white;
+  color: salmon;
   font-style: italic;
   font-size: 40px;
   font-family: "Times New Roman", Times, serif;
-  text-decoration: underline;
 }
 
-
 .aboutme{
-  background-color: #555555;;
-  color: white;
+  color: salmon;
 }
 
 img{
@@ -74,11 +72,12 @@ img{
   border-color: black;
 }
 
-
 footer{
     left: 0;
     bottom: 0;
     width: 100%;
-    color: black;
+    color: salmon;
     text-align: center;
 }
+
+
