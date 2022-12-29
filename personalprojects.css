@@ -80,6 +80,7 @@ body {
       left: 0;
       bottom: 0;
       width: 100%;
+      position: fixed;
       color: salmon;
       text-align: center;
   }
