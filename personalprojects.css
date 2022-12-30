@@ -67,6 +67,26 @@ body {
     color: salmon;
   }
 
+  .sub{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #EFEFEF;
+    color: black;
+  }
+
+  .back{
+    border-radius: 50%;
+  }
+
+  .personal{
+    color: salmon;
+  }
+
+  .sub:hover{
+    color: salmon;
+  }
+
   span.description {
     font-style: italic;
   }

@@ -68,6 +68,26 @@ h2{
   color: salmon;
 }
 
+.sub{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #EFEFEF;
+  color: black;
+}
+
+.back{
+  border-radius: 50%;
+}
+
+.college{
+  color: salmon;
+}
+
+.sub:hover{
+  color: salmon;
+}
+
 span.technology{
   font-style: italic;
 }
