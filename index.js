@@ -1,14 +1,14 @@
 setTimeout(headertwo, 800)
-setTimeout(headerthree, 900)
-setTimeout(letter, 1100)
-setTimeout(lettergray, 1200)
-setTimeout(letter, 1300)
+setTimeout(headerthree, 1500)
+setTimeout(lettergray, 50)
+setTimeout(navigation, 100)
+
 function letter() {
     document.getElementById("letter").style.color = "salmon"
 }
 
 function lettergray() {
-    document.getElementById("letter").style.color = "gray"
+    $('#letter').delay(1700).fadeIn(100).fadeOut(100).fadeIn(150).fadeOut(150).fadeIn(200);
 }
 
 function headertwo() {
@@ -17,4 +17,9 @@ function headertwo() {
 
 function headerthree() {
     document.getElementById("headerthree").style.color = "salmon"
+}
+
+function navigation() {
+    $("#navigation").delay(2000).slideDown(2000);
+    $("footer").delay(3000).slideDown(2000);
 }
