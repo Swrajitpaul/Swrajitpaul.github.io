@@ -3,10 +3,12 @@
   <html>
     <head>
       <link rel="stylesheet" href="projects.css" >
-      <title>Homepage of Swrajit Paul</title>
+      <script src="jquery-3.6.3.min.js"></script>
+      <script src="aboutme.js" ></script>
+      <title>Projects of Swrajit Paul</title>
     </head>
   <body>
-    <nav>
+    <nav hidden id="navigation">
       <a href="index.html"><button class="btn homepage" >HOME</button></a>
       <a href="aboutme.html" ><button class="btn aboutme" >ABOUT ME</button></a>
       <a href="resume.html">  <button class="btn myresume">RESUME</button></a>
@@ -14,7 +16,7 @@
       <a href="https://github.com/Swrajitpaul?tab=repositories" target="_blank"><button class="btn github">GITHUB</button></a>
       <hr class="line">
     </nav>
-    <section id="top">
+    <section hidden id="page">
       <br />
       <br />
       <div>
@@ -36,10 +38,10 @@
         </p>
       </div>
     </section>
-    <footer>
+    <footer hidden id="footer">
       <address>
         <p >
-          © 2023 Swrajit Paul. All rights reserved. v12.1
+          © 2023 Swrajit Paul. All rights reserved. v12.2
         </p>
       </address>
     </footer>

@@ -4,11 +4,12 @@
     <head>
       <link rel="stylesheet" href="resume.css" >
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <title>Homepage of Swrajit Paul</title>
+      <script src="jquery-3.6.3.min.js"></script>
+      <script src="resume.js" ></script>
+      <title>Resume of Swrajit Paul</title>
     </head>
   <body>
-    <script src="resume.js"></script>
-    <nav>
+    <nav hidden id="navigation">
       <a href="index.html"><button class="btn homepage" >HOME</button></a>
       <a href="aboutme.html" ><button class="btn aboutme" >ABOUT ME</button></a>
       <a href="resume.html">  <button class="btn myresume" >RESUME</button></a>
@@ -16,16 +17,16 @@
       <a href="https://github.com/Swrajitpaul?tab=repositories" target="_blank"><button class="btn github">GITHUB</button></a>
       <hr class="line">
     </nav>
-    <section>
+    <section hidden id="page">
       <br />
       <br />
       <button onclick="download()" class="download"><i class="fa fa-download"></i> Download</button>
       <embed src="myresume.pdf" height="500" width="900"></iframe>
     </section>
-    <footer>
+    <footer hidden id="footer">
       <address>
         <p >
-          © 2023 Swrajit Paul. All rights reserved. v12.1
+          © 2023 Swrajit Paul. All rights reserved. v12.2
         </p>
       </address>
     </footer>
