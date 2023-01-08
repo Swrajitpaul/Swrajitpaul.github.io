@@ -49,10 +49,12 @@ nav{
 
 .btn:hover{
   color: salmon;
+  transform: scale(1.1);
 }
 
 .myresume{
   color:salmon;
+  transform: scale(1.1);
 }
 
 .download{
