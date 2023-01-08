@@ -64,12 +64,10 @@ body {
   
   .btn:hover{
     color: salmon;
-    transform: scale(1.1);
   }
   
   .myprojects{
     color: salmon;
-    transform: scale(1.1);
   }
   
   footer{
