@@ -1,0 +1,114 @@
+:root {
+  --bg: #d3d3d3;
+  --accent: salmon;
+  --text: #111;
+  --nav-h-desktop: 80px;
+  --nav-h-mobile: 110px;
+  --footer-h: 50px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Page wrapper used by every view except Home */
+.page {
+  padding: calc(var(--nav-h-desktop) + 1rem) 1rem calc(var(--footer-h) + 1rem);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page > section {
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding-top: calc(var(--nav-h-mobile) + 1rem);
+  }
+}
+
+/* Shared button look */
+.btn {
+  border: none;
+  background-color: transparent;
+  color: var(--text);
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-style: italic;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.btn:hover,
+.btn.active {
+  color: var(--accent);
+}
+
+.download {
+  border: 1px solid #999;
+  background: transparent;
+  color: var(--text);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.download:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+h2 {
+  color: var(--accent);
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin: 0 0 1rem;
+}
+
+h3 {
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  margin: 1rem 0 0.5rem;
+}
+
+p {
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+/* Fade transition used by App.vue */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.8s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
