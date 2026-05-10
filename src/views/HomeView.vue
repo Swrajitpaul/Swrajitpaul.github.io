@@ -1,30 +1,26 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const skipIntro = sessionStorage.getItem('home-intro-seen') === '1'
-const showH2 = ref(skipIntro)
-const showH3 = ref(skipIntro)
-const showLetter = ref(skipIntro)
+const INTRO_KEY = 'home-intro-seen'
+const skipIntro = sessionStorage.getItem(INTRO_KEY) === '1'
+const showName = ref(skipIntro)
+const showCursor = ref(skipIntro)
 
 onMounted(() => {
   if (skipIntro) return
-  setTimeout(() => (showH2.value = true), 800)
-  setTimeout(() => (showH3.value = true), 1500)
-  setTimeout(() => (showLetter.value = true), 1750)
+  setTimeout(() => {
+    showName.value = true
+    sessionStorage.setItem(INTRO_KEY, '1')
+  }, 600)
+  setTimeout(() => (showCursor.value = true), 1400)
 })
 </script>
 
 <template>
   <main class="hero">
-    <Transition name="fade">
-      <h2 v-if="showH2">Welcome to</h2>
-    </Transition>
     <h1>
-      SWRAJIT PAUL<Transition name="blink"><span v-if="showLetter" class="letter">'S</span></Transition>
+      <Transition name="fade"><span v-if="showName">Swrajit Paul</span></Transition><span v-if="showCursor" class="cursor">|</span>
     </h1>
-    <Transition name="fade">
-      <h3 v-if="showH3">Website</h3>
-    </Transition>
   </main>
 </template>
 
@@ -32,40 +28,25 @@ onMounted(() => {
 .hero {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
   padding: 2rem;
 }
 
 h1 {
-  font: italic bold clamp(2.5rem, 9vw, 5rem) Georgia, serif;
+  font: bold clamp(3.5rem, 12vw, 7rem) 'Dancing Script', cursive;
   margin: 0;
 }
 
-h2,
-h3 {
+.cursor {
   color: var(--accent);
-  font: italic bold clamp(1.5rem, 5vw, 3rem) Georgia, serif;
-  margin: 0;
+  font-weight: 300;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
 }
 
-.letter {
-  color: var(--accent);
-  display: inline-block;
-}
-
-.blink-enter-active {
-  animation: blinkIn 0.55s ease forwards;
-}
-
-@keyframes blinkIn {
-  0%   { opacity: 0; }
-  18%  { opacity: 1; }
-  36%  { opacity: 0; }
-  55%  { opacity: 1; }
-  73%  { opacity: 0; }
-  100% { opacity: 1; }
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
 }
 </style>

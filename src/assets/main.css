@@ -1,9 +1,9 @@
 :root {
-  --bg: #d3d3d3;
+  --bg: #f5f3f0;
   --accent: salmon;
   --text: #111;
   --nav-h-desktop: 80px;
-  --nav-h-mobile: 110px;
+  --nav-h-mobile: 80px;
   --footer-h: 50px;
 }
 
@@ -19,7 +19,7 @@ html, body {
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -51,8 +51,10 @@ a {
   background-color: transparent;
   color: var(--text);
   padding: 0.75rem 1rem;
-  font-size: 1rem;
-  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   cursor: pointer;
   display: inline-block;
   white-space: nowrap;
@@ -65,35 +67,19 @@ a {
   color: var(--accent);
 }
 
-.download {
-  border: 1px solid #999;
-  background: transparent;
-  color: var(--text);
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.download:hover {
-  color: var(--accent);
-  border-color: var(--accent);
-}
-
 h2 {
   color: var(--accent);
-  font-style: italic;
-  font-family: "Times New Roman", Times, serif;
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
   margin: 0 0 1rem;
 }
 
 h3 {
-  font-style: italic;
-  font-family: "Times New Roman", Times, serif;
-  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 500;
   margin: 1rem 0 0.5rem;
 }
 
